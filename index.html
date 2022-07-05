@@ -1,40 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>June 2022 News</h1>
+          </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+          <section>
+            <ul>
+              <li>Puppeteer 15 Release</li>
+              <li>Deno (company) raised 21 million VC funds.
+                <ul>
+                  <li>Deno Company has made an SSR framework called Fresh</li>
+                </ul>
+              </li>
+              <li>
+                Github Copilot is generally available with subscription fee.
+              </li>
+              <li>
+                Next.js released v12.2. Middleware and on-demand ISR.
+              </li>
+            </ul>
+          </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+          <section>
+            <p>ECMAScript 2022 is approved</p>
+
+            <section>
+              <p>
+                Includes new members of classes like public, static, and private
+                fields. Additionally static initialization blocks were added.
+              </p>
+            </section>
+
+            <section>
+              <p>
+                Top level await!
+              </p>
+            </section>
+
+            <section>
+              <p><code>.at()</code> for indexable values</p>
+            </section>
+
+            <section>
+              <p>
+                <a href="https://2ality.com/2022/06/ecmascript-2022.html"
+                  >Source</a
+                >
+              </p>
+            </section>
+          </section>
+
+          <section>
+            <p>Given this array of tweets, how would you get the tweet that has an id of 3?</p>
+            <code>
+              const tweets = [
+  { id: 1, stars: 13, text: 'Turns out "git reset --hard HEAD^" was a terrible idea.' },
+  { id: 2, stars: 87, text: 'Tech conferences are too expensive.' },
+  { id: 3, stars: 51, text: 'Clean code is subjective. Optimize for deletion.' },
+  { id: 4, stars: 19, text: 'Maybe the real benefit of open source was the friendships we made along the way?' },
+]
+
+            </code>
+          </section>
+
+          <section>Typescript 4.8 Beta</section>
+        </section>
+        <section>Slide 2</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
